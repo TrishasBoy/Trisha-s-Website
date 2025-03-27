@@ -1,202 +1,191 @@
-/* Romantic & Aesthetic CSS for Trisha Website */
+/* Dreamy & Elegant CSS for Trisha Anne Babagay's Website */
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500;700&display=swap');
+
+/* General Styles */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Quicksand', sans-serif;
-  background: linear-gradient(to right, #fbeeff, #e0f7ff);
-  color: #444;
-  overflow-x: hidden;
-}
-
-header {
-  background-color: #d4eaf7;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #64b5f6);
   color: #2c3e50;
+  overflow-x: hidden;
   text-align: center;
-  padding: 3rem 1rem;
-  font-family: 'Pacifico', cursive;
-  border-bottom: 5px dashed #b3d9ff;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  animation: fadeInDown 1s ease;
+/* Remove Bullets from Lists */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+/* Header Styling */
+header {
+  background: linear-gradient(135deg, #a7ffff, #64b5f6);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 5px solid #5dade2;
+  font-family: 'Great Vibes', cursive;
+}
+
+header p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #fdfbff;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navigation Bar */
 nav {
-  background-color: #f6d1f5;
+  background: rgba(144, 202, 249, 0.8);
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 1rem;
-  font-weight: bold;
-  font-size: 1.1rem;
-  border-bottom: 3px solid #ffc0f0;
-  position: sticky;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  position: static;
   top: 0;
   z-index: 1000;
+  border-bottom: 3px solid #1e88e5;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
-  color: #792d5d;
+  color: white;
   text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
   transition: all 0.3s ease;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
+  font-weight: bold;
+  background: #64b5f6;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-family: 'Playfair Display', serif;
 }
 
 nav a:hover {
-  color: #ff3399;
-  background-color: #ffeaf6;
-  text-shadow: 1px 1px 2px #ffcce6;
+  background: #bbdefb;
+  transform: scale(1.1);
 }
 
+/* Main Container */
 .container {
-  max-width: 1100px;
-  margin: 2rem auto;
+  max-width: 650px;
+  margin: 3rem auto;
   padding: 2rem;
-  background: #ffffffee;
-  border-radius: 2rem;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  animation: fadeIn 1.2s ease-in-out;
+  background: rgb(204, 253, 255);
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 3px solid #64b5f6;
 }
 
+/* Sections */
 section {
   margin-bottom: 3rem;
-  padding: 1rem;
-  border-radius: 1.5rem;
-  background: #fff9fb;
-  border: 1px solid #ffd9ec;
-  box-shadow: 0 6px 15px rgba(255, 153, 204, 0.15);
+  padding: 2rem;
+  border-radius: 20px;
+  background: linear-gradient(to right, #64b5f6, #a8d5fa);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Playfair Display', serif;
 }
 
 section h2 {
-  font-family: 'Pacifico', cursive;
-  font-size: 2rem;
-  color: #c71585;
-  border-bottom: 2px dotted #ff99cc;
+  font-size: 3.2rem;
+  color: #5c6bc0;
+  border-bottom: 4px solid #1e88e5;
   padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  position: relative;
+  margin-bottom: 1.5rem;
 }
 
-section h2::after {
-  content: "💗";
-  position: absolute;
-  right: 10px;
-  top: 0;
-  font-size: 1.5rem;
+/* Gallery Styling */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
 }
 
-section p, section li {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #555;
-}
-
-ul {
-  list-style: heart inside;
-  padding-left: 1rem;
-  margin-top: 1rem;
-}
-
-ul li::before {
-  content: "💖 ";
-}
-
-img {
-  max-width: 100%;
-  border-radius: 1rem;
-  margin-top: 1rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  transition: transform 0.4s ease;
-}
-
-img:hover {
-  transform: scale(1.03);
-}
-
-.social-links {
-  display: flex;
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive layout */
+  gap: 12px; /* Adds spacing between images */
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 1rem;
 }
 
-.social-links a {
-  background-color: #ffe0f0;
-  padding: 0.7rem 1.5rem;
-  border-radius: 1.5rem;
-  text-decoration: none;
-  color: #c71585;
-  font-weight: bold;
-  transition: background 0.3s;
-  box-shadow: 0 4px 10px rgba(255, 153, 204, 0.4);
+.gallery-grid img {
+  width: 100%;  
+  height: 220px; /* Taller height for vertical images */
+  object-fit: cover; /* Ensures images keep a good aspect ratio */
+  border-radius: 8px; /* Smooth corners */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;  
+  cursor: pointer;
 }
 
-.social-links a:hover {
-  background-color: #ffb3dd;
-  transform: scale(1.05);
+.gallery-grid img:hover {
+  transform: scale(1.03); /* Slight zoom effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+
+/* Fullscreen Image Styling */
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullscreen img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.prev-arrow, .next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.prev-arrow { left: 20px; }
+.next-arrow { right: 20px; }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.container, .gallery-grid img {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 2rem;
-  background-color: #f9e3f3;
-  color: #777;
-  font-size: 0.9rem;
-  border-top: 3px dotted #ffcce6;
+  background: #5c6bc0;
+  color: white;
+  font-size: 1.5rem;
   font-style: italic;
-  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.highlight {
-  background-color: #fff5fa;
-  border-left: 5px solid #ff99cc;
-  padding: 1rem 1.5rem;
-  border-radius: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Heart cursor (optional aesthetic touch) */
-body {
-  cursor: url('https://cur.cursors-4u.net/cursors/cur-9/cur859.cur'), auto;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .container {
-    padding: 1rem;
-  }
-
-  section {
-    padding: 1rem;
-  }
-
-  header h1 {
-    font-size: 2.2rem;
-  }
-
-  section h2 {
-    font-size: 1.6rem;
-  }
+  border-top: 3px solid #1e88e5;
+  border-radius: 20px 20px 0 0;
+  font-family: 'Great Vibes', cursive;
 }
